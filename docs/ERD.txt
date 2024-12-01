@@ -1,0 +1,54 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table Books {
+  id int [pk, increment]
+  title varchar
+  language_id int
+  maturityRating varchar
+  publisher_id int
+  publishedDate date
+  pageCount int
+}
+
+Table Authors {
+  id int [pk, increment]
+  name varchar
+}
+
+Table Languages {
+  id int [pk, increment]
+  language varchar
+}
+
+Table Categories {
+  id int [pk, increment]
+  category varchar
+}
+
+Table Publishers {
+  id int [pk, increment]
+  name varchar
+}
+
+Table Books_Authors {
+  book_id int
+  author_id int
+  primary key (book_id, author_id)
+}
+
+Table Books_Categories {
+  book_id int
+  category_id int
+  primary key (book_id, category_id)
+}
+
+// Define relationships (Refs)
+Ref: Books.language_id > Languages.id
+Ref: Books.publisher_id > Publishers.id
+
+Ref: Books_Authors.book_id > Books.id
+Ref: Books_Authors.author_id > Authors.id
+
+Ref: Books_Categories.book_id > Books.id
+Ref: Books_Categories.category_id > Categories.id
