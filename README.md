@@ -1,5 +1,27 @@
 # MySQL databse
 
+This small project demonstrates how to set up and manage a MySQL database using Docker and Python. It serves as an example for testing Docker Compose with a MySQL service and performing basic data processing, querying, and visualization tasks. It's a practical resource for learning and experimenting with database operations.
+
+## Features
+
+- Simple Data Cleaning:
+  Process raw book data (google_books_dataset.csv) into a cleaner format for demonstration purposes.
+
+- Easy MySQL Setup:
+  Set up a MySQL database quickly using Docker Compose and load sample data with a Python script (`__main__.py`).
+
+- Basic Entity-Relationship Diagram (ERD):
+  A simple ERD is included to illustrate the database structure and relationships.
+
+- Predefined SQL Queries and Visualizations:
+  Run example SQL queries and generate basic visualizations using the `simple_Q_&_V.ipynb` notebook.
+
+- Modular Project Structure:
+  Clear folder organization to help you understand each step, from raw data to database setup and querying.
+
+- Docker Integration:
+  A straightforward Docker Compose setup makes it easy to start and stop the MySQL service for testing.
+
 ## Dataset
 
 ### Source  
@@ -12,24 +34,17 @@ The dataset is used strictly for educational and non-commercial purposes. For li
 ### Disclaimer  
 This dataset is owned by Google, and I do not claim any ownership or rights over it.
 
-## Features
-
-- 
-- 
-- 
-
-
 ## Installation
 
 **Prerequisite:** Ensure [Poetry](https://python-poetry.org/docs/#installation) is installed on your system, and [Docker](https://www.docker.com/get-started) is running.
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/PetrFridrich/MySQLDatabase.git
    ```
 2.  Navigate to the project directory:
     ```bash
-    cd 
+    cd MySQLDatabase
     ```
 3. Install the dependencies with Poetry:
     ```bash 
