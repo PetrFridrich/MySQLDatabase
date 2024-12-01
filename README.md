@@ -59,11 +59,6 @@ This will install all required dependencies as defined in pyproject.toml.
     docker-compose up -d
     ```
     This command will start the MySQL container in the background.
-5. (Optional) Verify that the MySQL service is running:
-    ```bash 
-    docker ps
-    ```
-    This will show the running Docker containers, including the MySQL service.
 
 ## Usage
 
